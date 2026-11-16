@@ -3,31 +3,31 @@ import Image from "next/image";
 const teamMembers = [
   {
     image: "https://ext.same-assets.com/2955440858/149115081.jpeg",
-    name: "Stevan Smith",
-    role: "Engine Specialist",
-    email: "Support@Info.Com",
-    phone: "+(800) 23-145-451",
+    name: "Área de diagnóstico",
+    role: "Especialidad de servicio",
+    email: "Demostración visual",
+    phone: "Sin contacto comercial",
   },
   {
     image: "https://ext.same-assets.com/2955440858/872014966.jpeg",
-    name: "Paul Walker",
-    role: "Engine Specialist",
-    email: "Support@Info.Com",
-    phone: "+(800) 23-145-451",
+    name: "Área de mantenimiento",
+    role: "Especialidad de servicio",
+    email: "Demostración visual",
+    phone: "Sin contacto comercial",
   },
   {
     image: "https://ext.same-assets.com/2955440858/3674774454.jpeg",
-    name: "Luck Walker",
-    role: "Engine Specialist",
-    email: "Support@Info.Com",
-    phone: "+(800) 23-145-451",
+    name: "Área de mecánica",
+    role: "Especialidad de servicio",
+    email: "Demostración visual",
+    phone: "Sin contacto comercial",
   },
   {
     image: "https://ext.same-assets.com/2955440858/684318091.jpeg",
-    name: "Brett Connor",
-    role: "Engine Specialist",
-    email: "Support@Info.Com",
-    phone: "+(800) 23-145-451",
+    name: "Área de estética",
+    role: "Especialidad de servicio",
+    email: "Demostración visual",
+    phone: "Sin contacto comercial",
   },
 ];
 
@@ -37,9 +37,9 @@ export default function Team() {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="section-title">Team Members</h2>
+          <h2 className="section-title">Especialidades del taller</h2>
           <p className="text-text-gray mt-8">
-            Phasellus imperdiet libero sit amet ante Donec convallis elementum leum
+            Una propuesta de presentación de diferentes áreas de especialización. Fotografías ilustrativas.
           </p>
         </div>
 
@@ -70,10 +70,10 @@ export default function Team() {
                   <p className="text-white/80 text-sm mb-4">{member.phone}</p>
                   {/* Social Icons */}
                   <div className="flex gap-3">
-                    {['facebook', 'twitter', 'linkedin'].map((social) => (
-                      <button
+                    {['diagnóstico', 'mantenimiento', 'calidad'].map((social) => (
+                      <span
                         key={social}
-                        type="button"
+                        aria-label={social}
                         className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                       >
                         <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -81,7 +81,7 @@ export default function Team() {
                           {social === 'twitter' && <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>}
                           {social === 'linkedin' && <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>}
                         </svg>
-                      </button>
+                      </span>
                     ))}
                   </div>
                 </div>
