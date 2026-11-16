@@ -5,20 +5,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
-  { label: "Home", href: "#", active: true },
-  { label: "About", href: "#" },
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Pages", href: "#", dropdown: true },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact us", href: "#contact" },
+  { label: "Inicio", href: "#inicio", active: true },
+  { label: "Acerca de", href: "#team" },
+  { label: "Servicios", href: "#services" },
+  { label: "Galería", href: "#portfolio" },
+  { label: "Vehículos", href: "#wheels" },
+  { label: "Artículos", href: "#blog" },
+  { label: "Proyecto", href: "#contact" },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="w-full">
+    <header id="inicio" className="w-full">
       {/* Top Bar */}
       <div className="bg-white py-4 px-4 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
@@ -36,7 +36,7 @@ export default function Header() {
                 <span className="text-primary-dark">AURIL</span>
                 <span className="text-accent-red">CARS</span>
               </span>
-              <p className="text-xs text-text-gray tracking-widest uppercase">Repairs & Services</p>
+              <p className="text-xs text-text-gray tracking-widest uppercase">Automotive web concept</p>
             </div>
           </Link>
 
@@ -50,8 +50,8 @@ export default function Header() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-text-gray">Call Us Now</p>
-                <p className="text-sm text-primary-dark font-semibold">+ ( 124 ) 45 78 678</p>
+                <p className="text-sm text-text-gray">Proyecto web</p>
+                <p className="text-sm text-primary-dark font-semibold">Frontend · Next.js</p>
               </div>
             </div>
 
@@ -63,8 +63,8 @@ export default function Header() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-text-gray">Email us</p>
-                <p className="text-sm text-primary-dark font-semibold">info@mail.com</p>
+                <p className="text-sm text-text-gray">Tecnologías</p>
+                <p className="text-sm text-primary-dark font-semibold">React · TypeScript</p>
               </div>
             </div>
 
@@ -77,8 +77,8 @@ export default function Header() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-text-gray">Opening Hours</p>
-                <p className="text-sm text-primary-dark font-semibold">Mon - Sat : 9am to 7pm</p>
+                <p className="text-sm text-text-gray">Estado</p>
+                <p className="text-sm text-primary-dark font-semibold">Demo conceptual</p>
               </div>
             </div>
           </div>
@@ -120,12 +120,12 @@ export default function Header() {
               ))}
             </ul>
 
-            {/* Add to Cart Button */}
+            {/* Ver proyecto Button */}
             <Link
-              href="#"
+              href="#contact"
               className="hidden lg:flex items-center gap-2 px-6 py-4 bg-accent-red text-white text-sm font-semibold uppercase tracking-wider hover:bg-red-600 transition-colors"
             >
-              Add to Cart
+              Ver proyecto
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
