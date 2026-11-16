@@ -26,16 +26,23 @@ La interfaz está desarrollada con **Next.js 15, React 18, TypeScript y Tailwind
 
 ## Qué puedes explorar
 
-| Apartado | Funcionalidades |
-| --- | --- |
-| **Portada** | Presentación visual del concepto, navegación a secciones y CTA funcionales |
-| **Servicios** | Filtros interactivos por categoría y tarjetas con información ampliable |
-| **Concepto** | Principios de diseño, tecnologías y estructura del proyecto |
-| **Galería** | Referencias visuales del sector con imágenes ilustrativas |
-| **Proyecto** | Acceso al código fuente y aclaración del alcance de la demo |
-| **Navegación** | Diseño responsive con menú para móvil |
+La web publicada utiliza **la estructura y los componentes originales del repositorio**. Incluye:
 
-El proyecto incluye interacciones de interfaz, pero **no necesita una base de datos ni API de backend** para su demostración.
+| Sección original | Componente |
+| --- | --- |
+| Cabecera y navegación | `Header.tsx` |
+| Portada con carrusel | `Hero.tsx` |
+| Servicios | `Services.tsx` |
+| Portfolio | `Portfolio.tsx` |
+| Equipo | `Team.tsx` |
+| Sección de ruedas | `WheelsSection.tsx` |
+| Blog | `Blog.tsx` |
+| Productos | `Products.tsx` |
+| Testimonios | `Testimonials.tsx` |
+| Newsletter | `Newsletter.tsx` |
+| Pie de página | `Footer.tsx` |
+
+Los formularios, compras, testimonios y datos comerciales de esta plantilla son **ilustrativos** y no representan procesos empresariales operativos. La configuración de GitHub Pages exporta el frontend original sin introducir un nuevo diseño.
 
 ## Tecnologías
 
@@ -94,7 +101,7 @@ La página no debe considerarse publicada hasta que GitHub confirme un despliegu
 auril-cars/
 ├── src/
 │   ├── app/
-│   │   ├── page.tsx           # Landing principal y componentes interactivos
+│   │   ├── page.tsx           # Composición de las secciones originales
 │   │   ├── layout.tsx         # Metadatos y layout base
 │   │   ├── globals.css        # Tailwind y estilos globales
 │   │   └── ClientBody.tsx
@@ -109,7 +116,7 @@ auril-cars/
 
 ## Estado y próximos pasos
 
-La portada del portfolio utiliza una implementación renovada, mientras que algunos componentes de la versión anterior permanecen en `src/components/` como material de desarrollo, sin utilizarse en la página principal.
+La portada del portfolio usa de nuevo todos los componentes originales de `src/components/`. Se han conservado el diseño y los textos de partida.
 
 Antes de convertir esta demo en una web comercial real, sería necesario incorporar información verificada de la empresa, fotografías propias, permisos de uso de imágenes, formularios conectados a backend seguro y los textos legales correspondientes.
 
