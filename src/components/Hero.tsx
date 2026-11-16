@@ -51,7 +51,7 @@ export default function Hero() {
         >
           <Image
             src={slide.image}
-            alt="Hero Background"
+            alt="Fotografía ilustrativa de automoción"
             fill
             className="object-cover"
             priority={index === 0}
@@ -62,16 +62,16 @@ export default function Hero() {
           <div className="relative h-full max-w-7xl mx-auto px-4 lg:px-8 flex items-center">
             <div className={`max-w-2xl ${index === currentSlide ? 'animate-fade-in' : ''}`}>
               <p className="text-white text-lg mb-2 tracking-wider uppercase font-medium">
-                Welcome To Auril
+                AURIL CARS · AUTOMOCIÓN
               </p>
               <h1 className="text-white text-4xl lg:text-6xl font-bold font-ubuntu mb-6 leading-tight">
-                CAR REPAIR & SERVICES
+                MECÁNICA Y CUIDADO DEL AUTOMÓVIL
               </h1>
               <p className="text-white/90 text-base lg:text-lg mb-4 leading-relaxed">
-                The Love Boat promises something for everyone. Now the world don't move to the beat of just one drum.
+                Una propuesta digital para un servicio de automoción moderno, con un diseño claro y orientado a cada detalle.
               </p>
               <p className="text-white/90 text-base lg:text-lg mb-8 leading-relaxed">
-                What might be right for you may not be right for some. Just two good ol' boys Never harm.
+                Explora nuestras áreas de especialización y descubre una experiencia pensada para transmitir confianza.
               </p>
 
               {/* Small Images */}
@@ -80,7 +80,7 @@ export default function Hero() {
                   <div key={idx} className="w-28 h-20 relative overflow-hidden">
                     <Image
                       src={img}
-                      alt="Service"
+                      alt="Detalle ilustrativo del sector automotriz"
                       fill
                       className="object-cover"
                     />
@@ -90,9 +90,10 @@ export default function Hero() {
 
               <button
                 type="button"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 className="inline-flex items-center px-6 py-3 bg-primary-dark text-white font-semibold uppercase tracking-wider text-sm hover:bg-accent-red transition-colors"
               >
-                Read More
+                Ver servicios
                 <span className="ml-3 w-8 h-8 bg-accent-red flex items-center justify-center">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
