@@ -1,10 +1,6 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Newsletter() {
-  const [email, setEmail] = useState("");
-
   return (
     <section
       className="py-12 bg-accent-red relative"
@@ -29,8 +25,9 @@ export default function Newsletter() {
             <input
               type="text"
               placeholder="Proyecto web de demostración"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value="Landing de ejemplo · Sin captación de datos"
+              readOnly
+              aria-label="Esta sección es una demostración visual"
               className="px-6 py-4 w-full sm:w-80 text-sm bg-white/10 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white"
             />
             <button
