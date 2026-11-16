@@ -10,14 +10,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary-dark': '#353c4a',
-        'accent-red': '#d94e50',
-        'light-bg': '#f8f8f9',
-        'text-gray': '#909193',
+        'primary-dark': '#192832',
+        'accent-red': '#e96752',
+        'light-bg': '#f4f6f5',
+        'text-gray': '#61717a',
       },
       fontFamily: {
-        'ubuntu': ['Ubuntu', 'sans-serif'],
-        'martel': ['Martel Sans', 'sans-serif'],
+        'ubuntu': ['Manrope', 'sans-serif'],
+        'martel': ['DM Sans', 'sans-serif'],
       },
     },
   },
