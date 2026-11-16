@@ -7,30 +7,30 @@ const tabs = [
   {
     id: "luxury",
     icon: "https://ext.same-assets.com/2955440858/682201569.png",
-    label: "Luxury Car",
+    label: "Turismos",
     color: "bg-accent-red",
   },
   {
     id: "trucks",
     icon: "https://ext.same-assets.com/2955440858/1494346880.png",
-    label: "Trucks Services",
+    label: "Vehículos comerciales",
     color: "bg-primary-dark",
   },
   {
     id: "sports",
     icon: "https://ext.same-assets.com/2955440858/3193976401.png",
-    label: "Sports Car",
+    label: "Deportivos",
     color: "bg-primary-dark",
   },
 ];
 
 const servicesList = [
-  { icon: "https://ext.same-assets.com/2955440858/149664672.png", text: "Complete Computer Diagnostics" },
-  { icon: "https://ext.same-assets.com/2955440858/1961825460.png", text: "Complete Safety Analysis" },
-  { icon: "https://ext.same-assets.com/2955440858/2525118223.png", text: "Fuel System Services" },
-  { icon: "https://ext.same-assets.com/2955440858/3027365017.png", text: "Steering and Suspensions" },
-  { icon: "https://ext.same-assets.com/2955440858/3031404015.png", text: "Brake Repair Specialists" },
-  { icon: "https://ext.same-assets.com/2955440858/3117143453.png", text: "Mufflers and Exhaust Systems" },
+  { icon: "https://ext.same-assets.com/2955440858/149664672.png", text: "Diagnóstico electrónico" },
+  { icon: "https://ext.same-assets.com/2955440858/1961825460.png", text: "Revisión de seguridad" },
+  { icon: "https://ext.same-assets.com/2955440858/2525118223.png", text: "Sistema de alimentación" },
+  { icon: "https://ext.same-assets.com/2955440858/3027365017.png", text: "Dirección y suspensión" },
+  { icon: "https://ext.same-assets.com/2955440858/3031404015.png", text: "Sistema de frenado" },
+  { icon: "https://ext.same-assets.com/2955440858/3117143453.png", text: "Escape y emisiones" },
 ];
 
 export default function WheelsSection() {
@@ -41,9 +41,9 @@ export default function WheelsSection() {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="section-title">Wheels We Handle</h2>
+          <h2 className="section-title">Vehículos y especialidades</h2>
           <p className="text-text-gray mt-8">
-            Phasellus imperdiet libero sit amet ante Donec convallis elementum leum
+            Distintas categorías de vehículos presentadas en una experiencia visual interactiva.
           </p>
         </div>
 
@@ -84,12 +84,12 @@ export default function WheelsSection() {
 
           {/* Right Side - Content */}
           <div className="bg-white p-8 lg:p-12">
-            <p className="text-text-gray mb-2">What We Offer</p>
+            <p className="text-text-gray mb-2">Qué incluye</p>
             <h3 className="text-2xl font-bold font-ubuntu text-accent-red mb-6">
-              BEST SERVICES WE CAN PROVIDE
+              MANTENIMIENTO Y REVISIÓN
             </h3>
             <p className="text-text-gray mb-8 leading-relaxed">
-              Suspendisse nec magna vitae est scelerisque blandit. Nam tempus vestibulums risus quis congue. Vestibulum fermentum sollicitudin posuere.
+              Información de ejemplo sobre las principales áreas de mantenimiento y atención al automóvil. Esta web muestra un concepto, no servicios disponibles para contratar.
             </p>
 
             {/* Services List */}
@@ -110,9 +110,10 @@ export default function WheelsSection() {
 
             <button
               type="button"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center px-6 py-3 bg-primary-dark text-white font-semibold uppercase tracking-wider text-sm hover:bg-accent-red transition-colors"
             >
-              Read More
+              Conocer proyecto
               <span className="ml-3 w-8 h-8 bg-accent-red flex items-center justify-center">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
