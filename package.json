@@ -1,13 +1,15 @@
 {
-  "name": "nextjs-tailwind",
+  "name": "auril-cars",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "bunx tsc --noEmit && next lint",
-    "format": "bunx biome format --write"
+    "lint": "eslint .",
+    "format": "bunx biome format --write",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run build"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
