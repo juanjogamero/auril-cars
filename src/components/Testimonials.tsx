@@ -4,24 +4,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const testimonials = [
-  {
-    avatar: "https://ext.same-assets.com/2955440858/2879769413.jpeg",
-    name: "James Bond",
-    role: "Happy Client",
-    text: "You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. Just two good ol' boys Wouldn't change if they could.",
-  },
-  {
-    avatar: "https://ext.same-assets.com/2955440858/1295562376.jpeg",
-    name: "James Bond",
-    role: "Happy Client",
-    text: "You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. Just two good ol' boys Wouldn't change if they could.",
-  },
-  {
-    avatar: "https://ext.same-assets.com/2955440858/1081766098.jpeg",
-    name: "James Bond",
-    role: "Happy Client",
-    text: "You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. Just two good ol' boys Wouldn't change if they could.",
-  },
+  {avatar:"https://ext.same-assets.com/2955440858/2879769413.jpeg",name:"Diseño de confianza",role:"Experiencia digital",text:"Una web de automoción debe explicar los servicios de forma sencilla y transmitir seguridad desde el primer vistazo."},
+  {avatar:"https://ext.same-assets.com/2955440858/1295562376.jpeg",name:"Atención al detalle",role:"Criterio de diseño",text:"La combinación de fotografía, jerarquía visual y contenidos claros puede mejorar la experiencia de navegación."},
+  {avatar:"https://ext.same-assets.com/2955440858/1081766098.jpeg",name:"Experiencia responsive",role:"Desarrollo frontend",text:"La estructura se adapta a distintos tamaños de pantalla sin perder las secciones y la identidad de la plantilla."},
 ];
 
 const avatars = [
@@ -59,9 +44,9 @@ export default function Testimonials() {
           {/* Testimonial */}
           <div>
             <div className="text-center lg:text-left mb-8">
-              <h2 className="section-title">Testimonial</h2>
+              <h2 className="section-title">Concepto y diseño</h2>
               <p className="text-text-gray mt-8">
-                Phasellus imperdiet libero sit amet ante Donec convallis
+                Ejemplos de valores de diseño, no opiniones de clientes reales.
               </p>
             </div>
 
@@ -78,7 +63,7 @@ export default function Testimonials() {
                 >
                   <Image
                     src={avatar}
-                    alt="Client"
+                    alt="Imagen ilustrativa"
                     width={56}
                     height={56}
                     className="w-full h-full object-cover"
@@ -121,9 +106,9 @@ export default function Testimonials() {
           {/* Happy Clients */}
           <div>
             <div className="text-center lg:text-left mb-8">
-              <h2 className="section-title">Our Happy Clients</h2>
+              <h2 className="section-title">Referencias visuales</h2>
               <p className="text-text-gray mt-8">
-                Phasellus imperdiet libero sit amet ante Donec convallis
+                Ejemplos de valores de diseño, no opiniones de clientes reales.
               </p>
             </div>
 
@@ -136,7 +121,7 @@ export default function Testimonials() {
                 >
                   <Image
                     src={logo}
-                    alt="Client Logo"
+                    alt="Elemento gráfico ilustrativo"
                     width={120}
                     height={80}
                     className="opacity-60 hover:opacity-100 transition-opacity"
