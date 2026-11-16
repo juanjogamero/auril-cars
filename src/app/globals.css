@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary-dark: #353c4a;
-  --accent-red: #d94e50;
-  --light-bg: #f8f8f9;
-  --text-gray: #909193;
+  --primary-dark: #192832;
+  --accent-red: #e96752;
+  --light-bg: #f4f6f5;
+  --text-gray: #61717a;
 }
 
 @layer base {
@@ -17,12 +17,12 @@
   }
 
   body {
-    font-family: 'Martel Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: var(--text-gray);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Manrope', sans-serif;
   }
 }
 
@@ -142,3 +142,15 @@
 .portfolio-item:hover .portfolio-overlay {
   opacity: 1;
 }
+
+/* Visual refinement: retain the original layouts and components. */
+body { font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+h1,h2,h3,h4,h5,h6 { letter-spacing: -0.025em; line-height: 1.25; }
+button,a { transition: background-color .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease; }
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible {outline: 3px solid #f49b79;outline-offset: 3px}
+.service-card,.team-card,.portfolio-item {box-shadow: 0 10px 32px rgba(25,40,50,.07); }
+.service-card:hover,.portfolio-item:hover {box-shadow:0 16px 38px rgba(25,40,50,.14);}
+.section-title { letter-spacing:.13em; box-shadow:0 6px 24px rgba(25,40,50,.12);}
+button[disabled],input[disabled],textarea[disabled] { cursor:not-allowed; }
+html {scroll-padding-top: 90px}
+@media (prefers-reduced-motion:reduce) {html {scroll-behavior:auto} *,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important}}
