@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const navItems = [
+const navItems: { label: string; href: string; active?: boolean; dropdown?: boolean }[] = [
   { label: "Inicio", href: "#inicio", active: true },
   { label: "Acerca de", href: "#team" },
   { label: "Servicios", href: "#services" },
