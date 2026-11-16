@@ -3,8 +3,8 @@ import "./globals.css";
 import ClientBody from "./ClientBody";
 
 export const metadata: Metadata = {
-  title: "Auril Cars - Car Repair & Services",
-  description: "Professional car repair and auto services. Wheel alignments, suspension repair, engine overhaul and more.",
+  title: "Auril Cars | Concepto web de automoción",
+  description: "Diseño conceptual de una web de automoción con Next.js, React y Tailwind CSS. Proyecto frontend con servicios, galería y contenido ilustrativo.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <ClientBody>{children}</ClientBody>
     </html>
   );
