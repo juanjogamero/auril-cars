@@ -4,10 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 
 const products = [
-  { image: "https://ext.same-assets.com/2955440858/3225494746.jpeg", name: "Car Accessories", price: 1500 },
-  { image: "https://ext.same-assets.com/2955440858/1453065873.jpeg", name: "Car Accessories", price: 1500 },
-  { image: "https://ext.same-assets.com/2955440858/185064032.jpeg", name: "Car Accessories", price: 1500 },
-  { image: "https://ext.same-assets.com/2955440858/193763463.jpeg", name: "Car Accessories", price: 1500 },
+  { image: "https://ext.same-assets.com/2955440858/3225494746.jpeg", name: "Accesorios de automoción", price: 1500 },
+  { image: "https://ext.same-assets.com/2955440858/1453065873.jpeg", name: "Accesorios de automoción", price: 1500 },
+  { image: "https://ext.same-assets.com/2955440858/185064032.jpeg", name: "Accesorios de automoción", price: 1500 },
+  { image: "https://ext.same-assets.com/2955440858/193763463.jpeg", name: "Accesorios de automoción", price: 1500 },
 ];
 
 export default function Products() {
@@ -18,9 +18,9 @@ export default function Products() {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="section-title">Our Products</h2>
+          <h2 className="section-title">Selección de accesorios</h2>
           <p className="text-text-gray mt-8">
-            Phasellus imperdiet libero sit amet ante Donec convallis elementum leum
+            Escaparate visual de productos de ejemplo. No hay venta ni carrito conectado.
           </p>
         </div>
 
@@ -37,21 +37,21 @@ export default function Products() {
                   height={200}
                   className="object-contain group-hover:scale-110 transition-transform duration-500"
                 />
-                {/* Add to Cart Overlay */}
+                {/* Ver colección Overlay */}
                 <div className="absolute inset-0 bg-primary-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button
-                    type="button"
+                  <a
+                    href="#contact"
                     className="px-6 py-3 bg-accent-red text-white text-sm font-semibold uppercase tracking-wider hover:bg-red-600 transition-colors"
                   >
-                    Add to Cart
-                  </button>
+                    Ver colección
+                  </a>
                 </div>
               </div>
 
               {/* Info */}
               <div className="p-4 text-center border-t-4 border-accent-red">
                 <h4 className="text-primary-dark font-semibold font-ubuntu mb-1">{product.name}</h4>
-                <p className="text-accent-red font-bold">$ {product.price}</p>
+                <p className="text-accent-red font-bold">Producto de ejemplo</p>
               </div>
             </div>
           ))}
