@@ -20,24 +20,25 @@ export default function Newsletter() {
           {/* Title */}
           <div className="text-white">
             <h3 className="text-xl font-bold font-ubuntu uppercase tracking-wide">
-              Subscribe to our Newsletter
+              Una web con estilo propio
             </h3>
           </div>
 
           {/* Form */}
           <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
             <input
-              type="email"
-              placeholder="E-MAIL ADDRESS"
+              type="text"
+              placeholder="Proyecto web de demostración"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="px-6 py-4 w-full sm:w-80 text-sm bg-white/10 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white"
             />
             <button
               type="button"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center px-6 py-4 bg-primary-dark text-white font-semibold uppercase tracking-wider text-sm hover:bg-primary-dark/80 transition-colors"
             >
-              Subscribe
+              Ver proyecto
               <span className="ml-3 w-8 h-8 bg-accent-red flex items-center justify-center">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
