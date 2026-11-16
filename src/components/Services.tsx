@@ -4,20 +4,20 @@ const services = [
   {
     icon: "https://ext.same-assets.com/2955440858/1121446196.png",
     image: "https://ext.same-assets.com/2955440858/541254622.jpeg",
-    title: "Wheel Alignments",
-    description: "Sed ut perspiciatis unde natus error voluptatem accusantium doloremque laudantium remder lits aperiam eaque ipsa inventore explicabo...",
+    title: "Alineación de ruedas",
+    description: "Una propuesta de servicio centrada en la revisión, el mantenimiento y el cuidado técnico del vehículo.",
   },
   {
     icon: "https://ext.same-assets.com/2955440858/3942101388.png",
     image: "https://ext.same-assets.com/2955440858/1328138568.jpeg",
-    title: "Suspension Repair",
-    description: "Sed ut perspiciatis unde natus error voluptatem accusantium doloremque laudantium remder lits aperiam eaque ipsa inventore explicabo...",
+    title: "Suspensión y dirección",
+    description: "Una propuesta de servicio centrada en la revisión, el mantenimiento y el cuidado técnico del vehículo.",
   },
   {
     icon: "https://ext.same-assets.com/2955440858/1288605852.png",
     image: "https://ext.same-assets.com/2955440858/1750490265.jpeg",
-    title: "Engine Overhaul",
-    description: "Sed ut perspiciatis unde natus error voluptatem accusantium doloremque laudantium remder lits aperiam eaque ipsa inventore explicabo...",
+    title: "Revisión del motor",
+    description: "Una propuesta de servicio centrada en la revisión, el mantenimiento y el cuidado técnico del vehículo.",
   },
 ];
 
@@ -27,9 +27,9 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="section-title">Our Services</h2>
+          <h2 className="section-title">Nuestros servicios</h2>
           <p className="text-text-gray mt-8">
-            Phasellus imperdiet libero sit amet ante Donec convallis elementum leum
+            Áreas de trabajo presentadas de forma clara. Contenido ilustrativo de una web conceptual.
           </p>
         </div>
 
@@ -71,14 +71,15 @@ export default function Services() {
 
               {/* Arrow Button */}
               <div className="flex justify-end p-4 pt-0">
-                <button
-                  type="button"
+                <a
+                  href="#contact"
+                  aria-label={`Ver información del proyecto sobre ${service.title}`}
                   className="w-10 h-10 bg-primary-dark flex items-center justify-center hover:bg-accent-red transition-colors"
                 >
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           ))}
