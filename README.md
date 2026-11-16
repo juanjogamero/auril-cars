@@ -26,7 +26,7 @@ La interfaz está desarrollada con **Next.js 15, React 18, TypeScript y Tailwind
 
 ## Qué puedes explorar
 
-La web publicada utiliza **la estructura y los componentes originales del repositorio**. Incluye:
+La web utiliza **la misma estructura y los componentes originales del repositorio**, con una actualización de identidad visual y contenido. Incluye:
 
 | Sección original | Componente |
 | --- | --- |
@@ -116,7 +116,7 @@ auril-cars/
 
 ## Estado y próximos pasos
 
-La portada del portfolio usa de nuevo todos los componentes originales de `src/components/`. Se han conservado el diseño y los textos de partida.
+La portada sigue utilizando todos los componentes y la distribución original de `src/components/`. Se han modernizado tipografías, colores y textos, sustituyendo datos ficticios y contenidos de plantilla por descripciones ilustrativas. No se han incorporado procesos comerciales reales.
 
 Antes de convertir esta demo en una web comercial real, sería necesario incorporar información verificada de la empresa, fotografías propias, permisos de uso de imágenes, formularios conectados a backend seguro y los textos legales correspondientes.
 
